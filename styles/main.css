@@ -1,0 +1,121 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  background-color: #fafafa;
+  padding: 0 2.5em;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  height: 3rem;
+}
+
+@media screen and (min-width: 360px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #4f4f4f;
+  font-size: 16px;
+  padding: 0.9rem;
+}
+
+.nav__link:hover {
+  color: #4f4f4f;
+  border-bottom: 3px solid #3182ed;
+}
+
+@media screen and (min-width: 768px) {
+  .icon__menu {
+    display: none;
+  }
+}
+
+.colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  width: 100px;
+}
+
+.colors__item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fafafa;
+  border-radius: 50%;
+  background-color: #3182ed;
+  cursor: pointer;
+}
+
+.colors__item--blue {
+  background-color: #3182ed;
+}
+
+.colors__item--orange {
+  background-color: #edc131;
+}
+
+.colors__item--green {
+  background-color: #ed3131;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+  color: #4f4f4f;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

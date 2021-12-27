@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Portfolio</title>
   </head>
 
   <body class="clear">
     <header class="header">
+      <img src="assets/icons/menu.svg" alt="menu" class="icon__menu"/>
+      <nav class="nav">
+        <a class="nav__link" href="#">About me</a>
+        <a class="nav__link" href="#">Skills</a>
+        <a class="nav__link" href="#Gallery">Projects</a>
+        <a class="nav__link" href="#">Experiencie</a>
+      </nav>
       <div id="toggle-colors" class="colors">
         <div
           data-color="hsl(214, 84%, 56%)"
@@ -25,13 +41,6 @@
           class="colors__item colors__item--orange"
         ></div>
       </div>
-
-      <nav class="nav">
-        <a class="nav__link" href="#">About Me</a>
-        <a class="nav__link" href="#">Skills</a>
-        <a class="nav__link" href="#Gallery">Projects</a>
-        <a class="nav__link" href="#">Experiencie</a>
-      </nav>
     </header>
   </body>
 </html>

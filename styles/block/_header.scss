@@ -1,20 +1,73 @@
+.header {
+  @include flexCenter(row, space-between, center);
+
+  height: 75px;
+
+  background-color: $bgCardColor;
+  padding: 0 2.5em;
+}
+
 .nav {
-    @include flexCenter(row, flex-end, center);
-   
-    background-color: $bgColor;
-    height: 3rem;
-  
-    &__link {
-      text-decoration: none;
-      margin-right: 1rem;
-      color: $textColor;
-      text-transform: uppercase;
-      padding: 0.9rem;
-    }
-  
-    &__link:hover {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include flexCenter(row, flex-end, center);
+
+  background-color: $bgCardColor;
+  height: 3rem;
+
+  &__link {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: $textColor;
+    font-size: 16px;
+    padding: 0.9rem;
+  }
+
+  &__link:hover {
+    // background-color: $bgColor;
+    color: $textColor;
+    // transition: 0.5s;
+    // border-radius: $borderRadius;
+    border-bottom: 3px solid $primaryColor;
+  }
+}
+
+.icon__menu {
+  @include tablet {
+    display: none;
+  }
+}
+
+.colors {
+  @include flexCenter(row, space-between, center);
+
+  height: 20px;
+  width: 100px;
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $bgCardColor;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    cursor: pointer;
+
+    &--blue {
       background-color: $primaryColor;
-      color: $textColor;
-      transition: 0.5s;
+    }
+
+    &--orange {
+      background-color: $secondaryColor;
+    }
+
+    &--green {
+      background-color: $therciaryColor;
     }
   }
+}

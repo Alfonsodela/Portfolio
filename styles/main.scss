@@ -1,5 +1,6 @@
 @import './utilities/variables';
 @import './utilities/mixins';
+@import './utilities/responsive';
 
 @import './block/header';
 
@@ -11,5 +12,5 @@
     margin: 0;
     background-color: $bgColor;
     color: $textColor;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
