@@ -1,31 +1,40 @@
-@import './utilities/variables';
-@import './utilities/mixins';
-@import './utilities/responsive';
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/responsive";
 
-@import './block/header';
-@import './block/profile';
+@import "./block/header";
+@import "./block/profile";
+@import "./block/project";
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    background-color: $bgColor;
-    color: $textColor;
-    font-family: 'Roboto', sans-serif;
-  }
+body {
+  margin: 0;
+  background-color: $bgColor;
+  color: $textColor;
+  font-family: "Roboto", sans-serif;
+}
 
-  .main {
-    display: grid;
-    padding: 1.5em;
+.main {
+  display: grid;
+  padding: 1.5em;
 
-    @include tablet {
-        grid-template-columns: min-content 1fr;
-    }
+  @include tablet {
+    grid-template-columns: min-content 1fr;
   }
+}
 
-  .column {
-    display: grid;
-    gap: 0.5em;
+.column {
+  display: grid;
+  gap: 0.5em;
+}
+
+@include tablet {
+  .column--right {
+    grid-template-columns: repeat(min-content);
+    grid-template-rows: repeat(3, min-content);
+    margin-left: 20px;
   }
+}
