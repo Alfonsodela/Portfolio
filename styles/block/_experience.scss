@@ -1,25 +1,20 @@
 .experience {
-    display: flex;
-    align-items: start;
-    // margin-bottom: 1em;
-    padding: 1em;
-    // border: 2px solid var(--primary-color);
-    // border-radius: var(--border-radius);
-  }
-  
-  .experience__time {
+  display: flex;
+  align-items: start;
+  // margin-bottom: 1em;
+  padding: 1em;
+
+  &__time {
     font-size: 0.9rem;
     margin-bottom: 0.5em;
     color: $primaryColor;
   }
-
-  .experience__job {
+  &__job {
     margin: 0;
     margin-bottom: 0.5em;
   }
-
-  .experience__description {
+  &__description {
     font-size: 0.9rem;
     // margin-bottom: 1.5em;
   }
-  
+}

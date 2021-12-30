@@ -59,7 +59,7 @@
 
 .nav__link:hover {
   color: #4f4f4f;
-  border-bottom: 3px solid #ed3131;
+  border-bottom: 3px solid #3182ed;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,24 +91,24 @@
   height: 20px;
   border: 1px solid #fafafa;
   border-radius: 50%;
-  background-color: #ed3131;
+  background-color: #3182ed;
   cursor: pointer;
 }
 
 .colors__item--blue {
-  background-color: #ed3131;
-}
-
-.colors__item--orange {
   background-color: #3182ed;
 }
 
-.colors__item--green {
+.colors__item--orange {
   background-color: #edc131;
 }
 
+.colors__item--green {
+  background-color: #ed3131;
+}
+
 a {
-  color: #ed3131;
+  color: #3182ed;
   text-decoration: none;
 }
 
@@ -119,7 +119,7 @@ img {
 
 .title {
   text-align: center;
-  color: #ed3131;
+  color: #3182ed;
 }
 
 .card {
@@ -223,7 +223,7 @@ img {
 .project__tag {
   padding: 0.4em 0.8em;
   border-radius: 0.4em;
-  background-color: #ed3131;
+  background-color: #3182ed;
   color: #e6e6e6;
 }
 
@@ -259,14 +259,14 @@ img {
 }
 
 .button--primary {
-  background-color: #ed3131;
+  background-color: #3182ed;
   color: #e6e6e6;
 }
 
 .button--ghost {
   background-color: transparent;
-  border: 1px solid #ed3131;
-  color: #ed3131;
+  border: 1px solid #3182ed;
+  color: #3182ed;
 }
 
 .experience {
@@ -282,7 +282,7 @@ img {
 .experience__time {
   font-size: 0.9rem;
   margin-bottom: 0.5em;
-  color: #ed3131;
+  color: #3182ed;
 }
 
 .experience__job {
@@ -328,28 +328,28 @@ img {
   content: "";
   position: absolute;
   left: -300px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--50::after {
   content: "";
   position: absolute;
   left: -150px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--30::after {
   content: "";
   position: absolute;
   left: -210px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--10::after {
   content: "";
   position: absolute;
   left: -270px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar1,
@@ -366,28 +366,28 @@ img {
   content: "";
   position: absolute;
   left: -250px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--a::after {
   content: "";
   position: absolute;
   left: -50px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--b::after {
   content: "";
   position: absolute;
   left: -70px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 .skills__bar--c::after {
   content: "";
   position: absolute;
   left: -40px;
-  background-color: #ed3131;
+  background-color: #3182ed;
 }
 
 * {
@@ -426,9 +426,9 @@ body {
   .column--right {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (min-content)[1];
-        grid-template-rows: repeat(1, -webkit-min-content);
-        grid-template-rows: repeat(1, min-content);
+    -ms-grid-rows: ()[min-content];
+        grid-template-rows: repeat(-webkit-min-content);
+        grid-template-rows: repeat(min-content);
     margin-left: 20px;
   }
 }
