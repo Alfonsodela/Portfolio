@@ -5,6 +5,8 @@
 @import "./block/header";
 @import "./block/profile";
 @import "./block/project";
+@import "./block/experience";
+@import "./block/skills";
 
 * {
   box-sizing: border-box;
@@ -33,8 +35,8 @@ body {
 
 @include tablet {
   .column--right {
-    grid-template-columns: repeat(min-content);
-    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, min-content);
     margin-left: 20px;
   }
 }

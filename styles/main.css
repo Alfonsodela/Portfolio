@@ -59,7 +59,7 @@
 
 .nav__link:hover {
   color: #4f4f4f;
-  border-bottom: 3px solid #3182ed;
+  border-bottom: 3px solid #ed3131;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,24 +91,24 @@
   height: 20px;
   border: 1px solid #fafafa;
   border-radius: 50%;
-  background-color: #3182ed;
+  background-color: #ed3131;
   cursor: pointer;
 }
 
 .colors__item--blue {
-  background-color: #3182ed;
-}
-
-.colors__item--orange {
-  background-color: #edc131;
-}
-
-.colors__item--green {
   background-color: #ed3131;
 }
 
+.colors__item--orange {
+  background-color: #3182ed;
+}
+
+.colors__item--green {
+  background-color: #edc131;
+}
+
 a {
-  color: #3182ed;
+  color: #ed3131;
   text-decoration: none;
 }
 
@@ -119,7 +119,7 @@ img {
 
 .title {
   text-align: center;
-  color: #3182ed;
+  color: #ed3131;
 }
 
 .card {
@@ -223,7 +223,7 @@ img {
 .project__tag {
   padding: 0.4em 0.8em;
   border-radius: 0.4em;
-  background-color: #3182ed;
+  background-color: #ed3131;
   color: #e6e6e6;
 }
 
@@ -244,7 +244,7 @@ img {
   width: 225px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .buttons {
     position: absolute;
     bottom: 1em;
@@ -259,14 +259,135 @@ img {
 }
 
 .button--primary {
-  background-color: #3182ed;
+  background-color: #ed3131;
   color: #e6e6e6;
 }
 
 .button--ghost {
   background-color: transparent;
-  border: 1px solid #3182ed;
-  color: #3182ed;
+  border: 1px solid #ed3131;
+  color: #ed3131;
+}
+
+.experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 1em;
+}
+
+.experience__time {
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+  color: #ed3131;
+}
+
+.experience__job {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.experience__description {
+  font-size: 0.9rem;
+}
+
+.skills {
+  padding: 1em 0;
+}
+
+.skills__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__bar,
+.skills__bar::after {
+  position: relative;
+  width: 300px;
+  height: 8px;
+  background-color: #888;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+.skills__bar::after {
+  content: "";
+  position: absolute;
+  left: -300px;
+  background-color: #ed3131;
+}
+
+.skills__bar--50::after {
+  content: "";
+  position: absolute;
+  left: -150px;
+  background-color: #ed3131;
+}
+
+.skills__bar--30::after {
+  content: "";
+  position: absolute;
+  left: -210px;
+  background-color: #ed3131;
+}
+
+.skills__bar--10::after {
+  content: "";
+  position: absolute;
+  left: -270px;
+  background-color: #ed3131;
+}
+
+.skills__bar1,
+.skills__bar1::after {
+  position: relative;
+  width: 250px;
+  height: 8px;
+  background-color: #888;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+.skills__bar1::after {
+  content: "";
+  position: absolute;
+  left: -250px;
+  background-color: #ed3131;
+}
+
+.skills__bar--a::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  background-color: #ed3131;
+}
+
+.skills__bar--b::after {
+  content: "";
+  position: absolute;
+  left: -70px;
+  background-color: #ed3131;
+}
+
+.skills__bar--c::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  background-color: #ed3131;
 }
 
 * {
@@ -303,12 +424,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .column--right {
-    -ms-grid-columns: ()[min-content];
-        grid-template-columns: repeat(-webkit-min-content);
-        grid-template-columns: repeat(min-content);
-    -ms-grid-rows: (min-content)[3];
-        grid-template-rows: repeat(3, -webkit-min-content);
-        grid-template-rows: repeat(3, min-content);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (min-content)[1];
+        grid-template-rows: repeat(1, -webkit-min-content);
+        grid-template-rows: repeat(1, min-content);
     margin-left: 20px;
   }
 }
