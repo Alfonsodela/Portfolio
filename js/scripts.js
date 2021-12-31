@@ -1,7 +1,8 @@
-const toggleColors = document.getElementById("toggle-colors");
-// const rootStyles = document.documentElement.main;
+const toggleColors = document.getElementById('toggle-colors');
+
+const rootStyles = document.documentElement.style;
 // 
-// toggleColors.addEventListener("click", (e) => {
-    // rootStyles.setProperty('$primaryColor', e.target.dataset.color);
-  // });
-  // 
+toggleColors.addEventListener("click", (e) => {
+    rootStyles.setProperty('--primary-color', e.target.dataset.color);
+  });
+  

@@ -7,7 +7,7 @@
   &__time {
     font-size: 0.9rem;
     margin-bottom: 0.5em;
-    color: $primaryColor;
+    color: var(--primary-color);
   }
   &__job {
     margin: 0;

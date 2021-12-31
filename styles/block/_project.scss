@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-column: 1 / -1;
+    padding: 2em;
   }
 }
 
@@ -28,7 +29,7 @@
   &__tag {
     padding: 0.4em 0.8em;
     border-radius: $borderRadius;
-    background-color: $primaryColor;
+    background-color: var(--primary-color);
     color: $bgColor;
   }
 }
@@ -55,13 +56,13 @@
   border-radius: $borderRadius;
 
   &--primary {
-    background-color: $primaryColor;
+    background-color: var(--primary-color);
     color: $bgColor;
   }
 
   &--ghost {
     background-color: transparent;
-    border: 1px solid $primaryColor;
-    color: $primaryColor;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
   }
 }

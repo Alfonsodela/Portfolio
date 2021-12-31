@@ -1,3 +1,7 @@
+:root{
+  --primary-color: hsl(214, 84%, 56%);
+}
+
 .header {
   @include flexCenter(row, space-between, center);
 
@@ -35,7 +39,7 @@
     color: $textColor;
     // transition: 0.5s;
     // border-radius: $borderRadius;
-    border-bottom: 3px solid $primaryColor;
+    border-bottom: 3px solid var(--primary-color);
   }
 }
 
@@ -56,19 +60,19 @@
     height: 20px;
     border: 1px solid $bgCardColor;
     border-radius: 50%;
-    background-color: $primaryColor;
+    background-color: var(--primary-color);
     cursor: pointer;
 
     &--blue {
-      background-color: $primaryColor;
+      --primary-color: hsl(214, 84%, 56%);
     }
 
     &--orange {
-      background-color: $secondaryColor;
+      --primary-color: hsl(46, 84%, 56%);
     }
 
-    &--green {
-      background-color: $therciaryColor;
+    &--red {
+      --primary-color: hsl(0, 84%, 56%)
     }
   }
 }

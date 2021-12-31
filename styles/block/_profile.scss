@@ -1,5 +1,5 @@
 a {
-  color: $primaryColor;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -10,7 +10,7 @@ img {
 
 .title {
   text-align: center;
-  color: $primaryColor;
+  color: var(--primary-color);
 }
 
 .card {

@@ -1,6 +1,8 @@
-$primaryColor: rgb(49, 130, 237);
-$secondaryColor: hsl(46, 84%, 56%); 
-$therciaryColor: hsl(0, 84%, 56%);
+:root{
+    --primary-color: hsl(214, 84%, 56%);
+  }
+  
+
 $textColor: hsl(0, 0%, 31%);
 $bgColor: hsl(0, 0%, 90%);
 $bgCardColor: hsl(0, 0%, 98%);

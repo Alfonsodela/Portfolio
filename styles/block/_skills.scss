@@ -20,7 +20,7 @@
   content: "";
   position: absolute;
   left: -300px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
   // transition: $transition;
   // animation: skill-bar-fill 2s ease-in-out forwards;
 }
@@ -29,21 +29,21 @@
   content: "";
   position: absolute;
   left: -150px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
 
 .skills__bar--30::after {
   content: "";
   position: absolute;
   left: -210px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
 
 .skills__bar--10::after {
   content: "";
   position: absolute;
   left: -270px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
 
 
@@ -61,7 +61,7 @@
   content: "";
   position: absolute;
   left: -250px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
   // transition: $transition;
   // animation: skill-bar-fill 2s ease-in-out forwards;
 }
@@ -70,19 +70,19 @@
   content: "";
   position: absolute;
   left: -50px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
 
 .skills__bar--b::after {
   content: "";
   position: absolute;
   left: -70px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
 
 .skills__bar--c::after {
   content: "";
   position: absolute;
   left: -40px;
-  background-color: $primaryColor;
+  background-color: var(--primary-color);
 }
