@@ -1,0 +1,42 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/responsive";
+
+@import "./block/header";
+@import "./block/profile";
+@import "./block/project";
+@import "./block/experience";
+@import "./block/skills";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $bgColor;
+  color: $textColor;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: grid;
+  padding: 1.5em;
+
+  @include tablet {
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.column {
+  display: grid;
+  gap: 0.5em;
+}
+
+@include tablet {
+  .column--right {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,68 @@
+.card--project {
+  @include tablet {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column: 1 / -1;
+    padding: 2em;
+  }
+}
+
+.project {
+  position: relative;
+
+  @include tablet {
+    margin-left: 2em;
+  }
+
+  &__tags {
+    @include flexCenter(row, space-between, center);
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+
+    @include tablet {
+      width: 325px;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__tag {
+    padding: 0.4em 0.8em;
+    border-radius: $borderRadius;
+    background-color: var(--primary-color);
+    color: $bgColor;
+  }
+}
+
+.buttons {
+  @include flexCenter(row, space-between, center);
+  width: 225px;
+
+  @include tablet {
+    // position: absolute;
+    // bottom: 1em;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 1em;
+  }
+}
+
+.button {
+  width: 100px;
+  line-height: 2.5;
+  text-align: center;
+  border-radius: $borderRadius;
+
+  &--primary {
+    background-color: var(--primary-color);
+    color: $bgColor;
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+}

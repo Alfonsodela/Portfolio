@@ -4,34 +4,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Portfolio</title>
   </head>
 
   <body class="clear">
+
+    <!-- HEADER -->
     <header class="header">
+      <img src="assets/icons/menu.svg" class="icon__menu"/>
+      <nav class="nav">
+        <a class="nav__link" a href="#aboutme">About me</a>
+        <a class="nav__link" href="#">Skills</a>
+        <a class="nav__link" a href="#projects">Projects</a>
+        <a class="nav__link" a href="#experiences">Experiencies</a>
+      </nav>
       <div id="toggle-colors" class="colors">
         <div
           data-color="hsl(214, 84%, 56%)"
           class="colors__item colors__item--blue"
         ></div>
         <div
-          data-color="hsl(150, 84%, 56%)"
-          class="colors__item colors__item--green"
+          data-color="hsl(0, 84%, 56%)"
+          class="colors__item colors__item--red"
         ></div>
         <div
           data-color="hsl(46, 84%, 56%)"
           class="colors__item colors__item--orange"
         ></div>
       </div>
-
-      <nav class="nav">
-        <a class="nav__link" href="#">About Me</a>
-        <a class="nav__link" href="#">Skills</a>
-        <a class="nav__link" href="#Gallery">Projects</a>
-        <a class="nav__link" href="#">Experiencie</a>
-      </nav>
     </header>
+
+    <main class="main">
+      <section class="column column--left">
+        
+        <!-- PROFILE CARD -->
+        <article id="aboutme" class="card card--profile">
+          <div class="card__image-container">
+            <img src="assets/images/Foto_carnet.jpg" alt="" class="card_image"/>
+          </div>
+          <div class="card__header">
+            <h2 class="card__title no-margin">Alfonso López de la Manzanara</h2>
+            <p class="card__subtitle">Front end developer</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="#">alfonsodelamanzanara@gmail.com</a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:660051415">66051415</a>
+            </div>
+            <p class="card__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE CARD -->
+        <article id="experiences" class="card card--experience">
+          <h2 class="card__title">Experiences</h2>
+          <div class="experience">
+            <div class="experience__info">
+              <p class="experience__time">
+                Feb 2017 - Current
+              </p>
+              <h3 class="experience__job">Responsable Ciclismo Decathlon</h3>
+              <p class="experience__description">"Lorem ipsum dolor sit amet, consectetur
+            </div>
+          </div>
+          <div class="experience">
+            <div class="experience__info">
+              <p class="experience__time">
+                Feb 2017 - Current
+              </p>
+              <h3 class="experience__job">Responsable Ciclismo Decathlon</h3>
+              <p class="experience__description">"Lorem ipsum dolor sit amet, consectetur
+            </div>
+          </div>
+          <div class="experience">
+            <div class="experience__info">
+              <p class="experience__time">
+                Jun 2013 - Current
+              </p>
+              <h3 class="experience__job">Responsable Ciclismo Decathlon</h3>
+              <p class="experience__description">"Lorem ipsum dolor sit amet, consectetur
+            </div>
+          </div>
+        </article>
+      </section>
+
+
+      <section class="column column--right">
+        <!-- SKILLS -->
+        <article class="card">
+          <h2 class="card__title">Front End Skills</h2>
+          <div class="skills">
+            <div class="skills__item">
+            <p class="skills__tech">HTML</p>
+            <div class="skills__bar skills__bar--50"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--30"></div>
+              </div>
+
+              <div class="skills__item">
+                <p class="skills__tech">JavaScript</p>
+                <div class="skills__bar skills__bar--10"></div>
+                </div>
+
+                <div class="skills__item">
+                  <p class="skills__tech">GIT</p>
+                  <div class="skills__bar skills__bar--50"></div>
+                  </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Other Skills</h2>
+          <div class="skills">
+            <div class="skills__item">
+            <p class="skills__tech">Trabajo en equipo</p>
+            <div class="skills__bar1 skills__bar--a"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Resolución de problemas</p>
+              <div class="skills__bar1 skills__bar--b"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">Proactividad</p>
+                <div class="skills__bar1 skills__bar--c"></div>
+                </div>
+          </div>
+        </article>
+
+        <!-- PROJECTS -->
+          <article id="projects" class="card card--project">
+            <div class="card__image-container">
+              <img src="assets/images/project.jpg" alt="Landing Page" class="card__image"/>
+            </div>
+            <div class="project">
+              <div class="project__tags">
+                <span class="project__tag">#HTML</span>
+                <span class="project__tag">#CSS</span>
+                <span class="project__tag">#JavaScript</span>
+                <span class="project__tag">#Responsive</span>
+              </div>
+              <h2 class="card__title">Portfolio </h2>
+              <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="buttons">
+                <a href="file:///C:/Users/fonse/OneDrive/Proyectos/Portfolio/index.html" class="button button--primary">Demo</a>
+                <a href="https://github.com/Alfonsodela/Portfolio" class="button button--ghost">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__image-container">
+              <img src="assets/images/project.jpg" alt="Landing Page" class="card__image"/>
+            </div>
+            <div class="project">
+              <div class="project__tags">
+                <span class="project__tag">#HTML</span>
+                <span class="project__tag">#CSS</span>
+                <span class="project__tag">#JavaScript</span>
+                <span class="project__tag">#Responsive</span>
+              </div>
+              <h2 class="card__title">Landing page: La Sportiva</h2>
+              <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="buttons">
+                <a href="#" class="button button--primary">Demo</a>
+                <a href="https://github.com/Alfonsodela/laSportiva" class="button button--ghost">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__image-container">
+              <img src="assets/images/project.jpg" alt="Landing Page" class="card__image"/>
+            </div>
+            <div class="project">
+              <div class="project__tags">
+                <span class="project__tag">#HTML</span>
+                <span class="project__tag">#CSS</span>
+                <span class="project__tag">#JavaScript</span>
+                <span class="project__tag">#Responsive</span>
+              </div>
+              <h2 class="card__title">Landing page: Mailchimp</h2>
+              <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="buttons">
+                <a href="file:///C:/Users/fonse/OneDrive/Escritorio/newBootcamp/Ejercicios/Mailchimp-sign-up-form/index.html" class="button button--primary">Demo</a>
+                <a href="https://github.com/Alfonsodela/Mailchimp-sign-up-form" class="button button--ghost">Code</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
