@@ -436,9 +436,9 @@ body {
   .column--right {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: ()[min-content];
-        grid-template-rows: repeat(-webkit-min-content);
-        grid-template-rows: repeat(min-content);
+    -ms-grid-rows: (min-content)[3];
+        grid-template-rows: repeat(3, -webkit-min-content);
+        grid-template-rows: repeat(3, min-content);
     margin-left: 20px;
   }
 }
